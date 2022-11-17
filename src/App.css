@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: flex-start;
 }
 
 .App-logo {
@@ -32,7 +34,283 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.content {
+  width: 100%;
+  /* max-width: 1185px; */
+  background-color: #F7F8FC;
+  margin-left: 70px;
+  margin-left: 255px;
+  padding: 36px 33px 30px 33px;
+}
+
+.sidebar {
+  position: absolute;
+  width: 100%;
+  max-width: 255px;
+  background-color: #363740;
+  height: 100%;
+  transition: all 0.3s ease;
+
+}
+
+
+
+.logo {
+  width: 100%;
+  max-width: 180px;
+  display: block;
+  padding: 41px 43px 32px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 59px;
+
+}
+
+.logo__text {
+
+  margin: 0;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #A4A6B3;
+
+  opacity: 0.7;
+
+}
+
+.sidebar__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+
+}
+
+.sidebar__item {
+  border: 3px solid transparent;
+  text-align: start;
+
+  transition: all 0.3s ease;
+
+
+}
+
+.sidebar__item:nth-child(6) {
+
+  border-bottom: 1px solid #dfe0eb34;
+  margin-bottom: 12px;
+}
+
+.sidebar__item:hover {
+  border-left: 3px solid #DDE2FF;
+  background: #9fa2b41a;
+
+}
+
+.selecteds {
+  border-left: 3px solid #DDE2FF;
+  background: #9fa2b41a;
+
+}
+
+.sidebar__item:checked {
+  border-left: 3px solid #DDE2FF;
+  background: #9fa2b41a;
+
+}
+
+.sidebar____item__links {
+  opacity: 1;
+  text-decoration: none;
+  width: 100%;
+  max-width: 159px;
+  display: flex;
+  align-items: center;
+  padding: 20px 33px;
+
+}
+
+.sidebar__item__links:hover {
+  fill: #DDE2FF;
+}
+
+.sidebar__item__text {
+  display: block;
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #A4A6B3;
+  transition: all 0.3s ease;
+
+}
+
+.sidebar__item:hover .sidebar__item__text {
+  color: #DDE2FF;
+
+}
+
+svg {
+  fill: #9FA2B4;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.sidebar__item:hover svg {
+  fill: #DDE2FF;
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #252733;
+  margin: 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__form {
+  position: relative;
+}
+
+.header__form::before {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(./images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  content: "";
+  z-index: 1;
+}
+
+.header__content__input {
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.header__content__input:focus {
+  z-index: 999;
+  border-bottom: 1px solid gray;
+}
+
+.notification {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-left: 26px;
+}
+
+.line {
+  display: block;
+  width: 0px;
+  height: 32px;
+  border: 1px solid #DFE0EB;
+  background-color: #DFE0EB;
+  margin-left: 32px;
+}
+
+.header__name {
+  margin: 0;
+  margin-left: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+}
+
+.header__img {
+  margin: 0;
+  margin-left: 14px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1.5px solid #DFE0EB;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  gap: 30px;
+  width: 100%;
+  
+}
+
+.status__item {
+  width: 100%;
+  max-width: 258px;
+  padding: 32px 24px;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+.status__item:hover {
+   border: 1px solid #3751FF;
+}
+.status__item:hover .status__text  {
+  color: #3751FF;
+ 
+}
+.status__item:hover .status__number{
+  color: #3751FF;
+}
+.status__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #9FA2B4;
+  margin-bottom: 12px;
+}
+
+.status__number {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #252733;
 }
