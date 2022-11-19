@@ -41,6 +41,13 @@
 	max-width: 255px;
 	background-color: #363740;
 	transition: all 0.3s ease;
+	position: fixed;
+	overflow: auto;
+	
+}
+
+::-webkit-scrollbar{
+	display: none;
 }
 
 .logo {
