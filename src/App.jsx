@@ -12,6 +12,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Sidebar />
+			
 			<Routes>
 				<Route path='/Overview'  element={<Content />} />
 				<Route path='/Tickets' element={<Tickets />} />
