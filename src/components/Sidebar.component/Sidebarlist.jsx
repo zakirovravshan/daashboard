@@ -150,7 +150,7 @@ export let Sidebarlist = () => {
 		<ul className='sidebar__list'>
 			{sidebarstop.map((bar) => (
 				<li className={`sidebar__item`}>
-					<NavLink  className={({ isActive, active }) =>
+					<NavLink  className={({ isActive }) =>
               isActive ? "active": "sidebar____item__links"
             } to={bar.text}>
 						{' '}
