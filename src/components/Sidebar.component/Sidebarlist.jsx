@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../../App.css';
 
 export let Sidebarlist = () => {
 	let sidebarstop = [
@@ -148,11 +149,13 @@ export let Sidebarlist = () => {
 	return (
 		<ul className='sidebar__list'>
 			{sidebarstop.map((bar) => (
-				<li className={`sidebar__item  `}>
-					<Link className='sidebar____item__links' to={'/single'}>
+				<li className={`sidebar__item`}>
+					<NavLink  className={({ isActive, active }) =>
+              isActive ? "active": "sidebar____item__links"
+            } to={bar.text}>
 						{' '}
 						{bar.icon} <span className='sidebar__item__text'> {bar.text}</span>
-					</Link>
+					</NavLink>
 				</li>
 			))}
 		</ul>
